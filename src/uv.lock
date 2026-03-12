@@ -1058,8 +1058,10 @@ dependencies = [
     { name = "opentelemetry-instrumentation-fastapi" },
     { name = "opentelemetry-instrumentation-requests" },
     { name = "opentelemetry-propagator-gcp" },
+    { name = "python-dotenv" },
     { name = "ruff" },
     { name = "structlog" },
+    { name = "uvicorn" },
 ]
 
 [package.metadata]
@@ -1072,8 +1074,10 @@ requires-dist = [
     { name = "opentelemetry-instrumentation-fastapi", specifier = ">=0.60b1" },
     { name = "opentelemetry-instrumentation-requests", specifier = ">=0.60b1" },
     { name = "opentelemetry-propagator-gcp", specifier = ">=1.11.0" },
+    { name = "python-dotenv", specifier = ">=1.2.2" },
     { name = "ruff", specifier = ">=0.15.5" },
     { name = "structlog", specifier = ">=25.5.0" },
+    { name = "uvicorn", specifier = ">=0.41.0" },
 ]
 
 [[package]]

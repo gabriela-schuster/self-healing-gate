@@ -21,6 +21,9 @@ from opentelemetry.sdk.trace.export import (
 from opentelemetry.trace import SpanKind
 
 
+env = get_environment_variables()
+
+
 class FilteredConsoleExporter(ConsoleSpanExporter):
     def export(self, spans):
         # só loga spans SERVER (a request em si), ignora os internos do ASGI
@@ -58,15 +61,8 @@ logging.basicConfig(handlers=[handler], level=logging.INFO)
 
 # Core Application Instance
 app = FastAPI(
-    title="MapForest",
-    description=Description,
-    openapi_tags=Tags,
-    openapi_url="/api/openapi.json",
-    docs_url="/api/documentation",
-    redoc_url=None,
-    swagger_ui_parameters={
-        "filter": True,
-    },
+    title="Dummy API",
+    description="",
 )
 
 FastAPIInstrumentor.instrument_app(app)

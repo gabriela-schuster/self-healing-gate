@@ -15,4 +15,6 @@ dependencies = [
     "opentelemetry-instrumentation-requests>=0.60b1",
     "structlog>=25.5.0",
     "ruff>=0.15.5",
+    "uvicorn>=0.41.0",
+    "python-dotenv>=1.2.2",
 ]
