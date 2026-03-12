@@ -1,0 +1,18 @@
+[project]
+name = "self-healing-gate"
+version = "0.1.0"
+description = "Gate that auto heals using proper AI"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi[standard]==0.116.1",
+    "fastapi-auth-middleware==1.0.2",
+    "fastapi-permissions==0.2.7",
+    "opentelemetry-exporter-gcp-trace>=1.11.0",
+    "opentelemetry-instrumentation>=0.60b1",
+    "opentelemetry-instrumentation-fastapi>=0.60b1",
+    "opentelemetry-propagator-gcp>=1.11.0",
+    "opentelemetry-instrumentation-requests>=0.60b1",
+    "structlog>=25.5.0",
+    "ruff>=0.15.5",
+]
