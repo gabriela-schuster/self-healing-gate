@@ -1,7 +1,16 @@
+name: Self-Heal
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch: # Manual Trigger
+
 jobs:
   sonar:
     runs-on: ubuntu-22.04
-    environment: ${{ github.ref_name == 'main' && 'Dev' || 'Dev' }}
+    environment: ${{ github.ref_name == 'main' && 'Prod' || 'Dev' }}
 
     steps:
       - uses: actions/checkout@v4
